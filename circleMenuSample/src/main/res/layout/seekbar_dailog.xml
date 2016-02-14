@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:layout_centerInParent="true"
+        android:background="@drawable/seekbar_background_circle"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/tvPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:paddingRight="70dp"
+            android:text="+"
+            android:textColor="#4f5151"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/tvMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="70dp"
+            android:text="-"
+            android:textColor="#4f5151"
+            android:textSize="40sp" />
+
+        <com.szugyi.circlemenusample.CircularSeekBar
+            android:id="@+id/circularSeekBar1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:circle_color="#4f5151"
+            app:circle_fill="@android:color/transparent"
+            app:circle_progress_color="@android:color/transparent"
+            app:circle_stroke_width="2dp"
+            app:circle_x_radius="100dp"
+            app:circle_y_radius="100dp"
+            app:end_angle="-270"
+            app:max="100"
+
+            app:pointer_alpha_ontouch="200"
+            app:pointer_color="#1a8597"
+            app:pointer_halo_color="#1a8597"
+
+            app:pointer_halo_color_ontouch="#1c707e"
+            app:pointer_halo_width="20dp"
+            app:progress="50"
+            app:start_angle="270"
+            app:use_custom_radii="true"
+
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/circle" />
+
+
+        <TextView
+            android:id="@+id/tvProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="25dp"
+            android:text="Price"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+
+
+            android:textColor="#EFEFEF" />
+
+        <TextView
+            android:id="@+id/main_selected_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingTop="15dp"
+            android:text="1.25425"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+
+
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+</LinearLayout>

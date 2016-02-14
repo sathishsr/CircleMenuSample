@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/main_calendar_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1M"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="1M" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/main_cloud_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5M"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="5M" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/main_facebook_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15M"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="15M" />
+
+
+    <!--<com.szugyi.circlemenu.view.CircleImageView-->
+    <!--android:id="@+id/main_key_image"-->
+    <!--circle:name="@string/key"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/icon_key" />-->
+
+    <!--<com.szugyi.circlemenu.view.CircleImageView-->
+    <!--android:id="@+id/main_profile_image"-->
+    <!--circle:name="@string/profile"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/icon_profile" />-->
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:id="@+id/main_tap_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30M"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="30M" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1H"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="1H" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2H"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="2H" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4MN"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="4MN" />
+
+    <!--<com.szugyi.circlemenu.view.CircleImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="4MN"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="12sp"-->
+        <!--circle:name="4MN" />-->
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4MN"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="4MN" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4MN"
+
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="4MN" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4MN"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="4MN" />
+
+    <com.szugyi.circlemenu.view.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4MN"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        circle:name="4MN" />
+</merge>

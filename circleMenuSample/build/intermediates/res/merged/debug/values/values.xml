@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_list">
+        <item>@string/main_sample</item>
+        <item>@string/main_fast</item>
+        <item>@string/main_no_rotation</item>
+        <item>@string/main_west</item>
+        <item>@string/main_background</item>
+        <item>@string/main_7_icons</item>
+        <item>@string/main_8_icons</item>
+    </string-array>
+    <declare-styleable name="CircleImageView"><attr format="string" name="name"/></declare-styleable>
+    <declare-styleable name="CircleLayout"><attr format="dimension" name="innerRadius"/><attr format="reference|color" name="sliceDivider"/><attr format="reference|color" name="innerCircle"/><attr format="float" name="angleOffset"/><attr format="float" name="angleRange"/><attr name="layoutMode"><enum name="normal" value="1"/><enum name="pie" value="2"/></attr><attr format="dimension" name="dividerWidth"/><attr format="integer" name="circleBackground"/><attr name="firstChildPosition"><enum name="East" value="0"/><enum name="South" value="90"/><enum name="West" value="180"/><enum name="North" value="270"/></attr><attr format="boolean" name="isRotating"/><attr format="integer" name="speed"/></declare-styleable>
+    <declare-styleable name="CircularSeekBar"><attr format="integer" name="progress"/><attr format="integer" name="max"/><attr format="boolean" name="move_outside_circle"/><attr format="boolean" name="maintain_equal_circle"/><attr format="boolean" name="use_custom_radii"/><attr format="boolean" name="lock_enabled"/><attr format="dimension" name="circle_x_radius"/><attr format="dimension" name="circle_y_radius"/><attr format="dimension" name="circle_stroke_width"/><attr format="dimension" name="pointer_radius"/><attr format="dimension" name="pointer_halo_width"/><attr format="dimension" name="pointer_halo_border_width"/><attr format="color" name="circle_color"/><attr format="color" name="circle_progress_color"/><attr format="color" name="pointer_color"/><attr format="color" name="pointer_halo_color"/><attr format="color" name="pointer_halo_color_ontouch"/><attr format="integer" name="pointer_alpha_ontouch"/><attr format="float" name="start_angle"/><attr format="float" name="end_angle"/><attr format="color" name="circle_fill"/></declare-styleable>
+    <dimen name="padding_large">5dp</dimen>
+    <string name="app_name">ST</string>
+    <string name="business_card">Business Card</string>
+    <string name="calendar">Calendar</string>
+    <string name="center_click">Center has been clicked</string>
+    <string name="cloud">Cloud</string>
+    <string name="facebook">Facebook</string>
+    <string name="key">Key</string>
+    <string name="mail">Mail</string>
+    <string name="main_7_icons">7 Icons</string>
+    <string name="main_8_icons">8 Icons</string>
+    <string name="main_background">Circle menu with background</string>
+    <string name="main_fast">Fast rotation</string>
+    <string name="main_no_rotation">No rotation</string>
+    <string name="main_sample">Sample Circle menu</string>
+    <string name="main_west">Orientation to west</string>
+    <string name="profile">Profile</string>
+    <string name="start_app">Starting application:</string>
+    <string name="tag">Tag</string>
+    <string name="voice_search">Voice Search</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

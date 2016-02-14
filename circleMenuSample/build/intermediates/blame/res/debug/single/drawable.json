@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable/seekbar_background_circle.xml",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable/seekbar_background_circle.xml"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable/circle.xml",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable/circle.xml"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable/bg.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable/bg.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable/chart_menu_circle.xml",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable/chart_menu_circle.xml"
+    }
+]

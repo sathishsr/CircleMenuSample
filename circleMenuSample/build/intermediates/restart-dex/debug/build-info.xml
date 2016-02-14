@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    api-level="22"
+    density="xhdpi"
+    format="1"
+    timestamp="1455434434869"
+    verifier="FIELD_ADDED" >
+
+    <task
+        name="javac"
+        duration="55" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="34" />
+    <task
+        name="verifier"
+        duration="2" />
+
+    <artifact
+        location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7_883e3519345ab823d89316543a365c9bc135d91a/classes.dex"
+        type="DEX" />
+    <artifact
+        location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6_2b905220fa786c315f21ac289529a557b64eb026/classes.dex"
+        type="DEX" />
+
+    <build timestamp="1455433024401" >
+        <artifact
+            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/outputs/apk/circleMenuSample-debug.apk"
+            type="MAIN" />
+    </build>
+    <build
+        timestamp="1455433132784"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/builds/debug/1455433132784/classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="1455433812863" >
+        <artifact
+            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="1455434032513"
+        verifier="METHOD_DELETED" >
+        <artifact
+            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5_b9a6770c3fe79d638ef1b3411cf7527ddb051828/classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="1455434434869"
+        verifier="FIELD_ADDED" >
+        <artifact
+            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7_883e3519345ab823d89316543a365c9bc135d91a/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6_2b905220fa786c315f21ac289529a557b64eb026/classes.dex"
+            type="DEX" />
+    </build>
+
+</instant-run>

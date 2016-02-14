@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_cloud.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_cloud.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_facebook.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_facebook.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_business_card.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_business_card.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_mail.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_mail.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_profile.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_profile.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_key.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_key.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_voice_search.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_voice_search.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_tag.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_tag.png"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/drawable-hdpi-v4/icon_calendar.png",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/drawable-hdpi/icon_calendar.png"
+    }
+]
