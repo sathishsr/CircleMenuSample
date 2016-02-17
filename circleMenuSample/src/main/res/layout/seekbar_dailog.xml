@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +8,6 @@
     <RelativeLayout
         android:layout_width="250dp"
         android:layout_height="250dp"
-
         android:layout_centerInParent="true"
         android:background="@drawable/seekbar_background_circle"
         android:padding="5dp">
@@ -40,7 +39,6 @@
 
         <com.szugyi.circlemenusample.CircularSeekBar
             android:id="@+id/circularSeekBar1"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -52,23 +50,16 @@
             app:circle_y_radius="100dp"
             app:end_angle="-270"
             app:max="100"
-
             app:pointer_alpha_ontouch="200"
             app:pointer_color="#1a8597"
             app:pointer_halo_color="#1a8597"
-
             app:pointer_halo_color_ontouch="#1c707e"
             app:pointer_halo_width="20dp"
             app:progress="50"
             app:start_angle="270"
             app:use_custom_radii="true"
-
             />
 
-        <SeekBar
-            android:layout_width="match_parent"
-
-            android:layout_height="wrap_content" />
 
         <ImageView
             android:id="@+id/imageView"
@@ -86,8 +77,6 @@
             android:paddingBottom="25dp"
             android:text="Price"
             android:textAppearance="?android:attr/textAppearanceSmall"
-
-
             android:textColor="#EFEFEF" />
 
         <TextView
@@ -98,8 +87,6 @@
             android:paddingTop="15dp"
             android:text="1.25425"
             android:textAppearance="?android:attr/textAppearanceLarge"
-
-
             android:textColor="@android:color/white" />
     </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample_8_items.xml",
-        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample_8_items.xml"
-    },
-    {
         "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample_7_items.xml",
         "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample_7_items.xml"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample_8_items.xml",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample_8_items.xml"
     },
     {
         "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample_west.xml",
@@ -24,19 +24,19 @@
         "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample_with_background.xml"
     },
     {
-        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample.xml",
-        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample.xml"
-    },
-    {
         "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample_fast.xml",
         "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample_fast.xml"
     },
     {
-        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/seekbar_dailog.xml",
-        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/seekbar_dailog.xml"
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/sample.xml",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/sample.xml"
     },
     {
         "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/activity_main.xml",
         "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/res/merged/debug/layout/seekbar_dailog.xml",
+        "source": "/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/src/main/res/layout/seekbar_dailog.xml"
     }
 ]

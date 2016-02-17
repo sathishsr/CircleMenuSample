@@ -54,11 +54,15 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
                 public boolean onTouch(View v, MotionEvent event) {
 
                     float num[] = {event.getX(), event.getY()};
-                    SeekbarDialog newFragment = SeekbarDialog.newInstance(num);
 
+                   SeekbarDialog dialog = new SeekbarDialog();
+                    dialog.show(getFragmentManager(),"");
 
-//                    SeekbarDialog.newInstance(num);
-                    newFragment.show(getFragmentManager(), "");
+//                    SeekbarDialog newFragment = SeekbarDialog.newInstance(num);
+//
+//
+////                    SeekbarDialog.newInstance(num);
+//                    newFragment.show(getFragmentManager(), "");
 
 
                     return false;
@@ -75,93 +79,13 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
 
 
 //                    SeekbarDialog.newInstance(num);
-                    newFragment.show(getFragmentManager(), "");
+//                    newFragment.show(getFragmentManager(), "");
 
 
                     return false;
                 }
             });
 
-//            final CircularSeekBar circularSeekBar = (CircularSeekBar) findViewById(R.id.circularSeekBar1);
-//            final TextView progressUpdate = (TextView) findViewById(R.id.main_selected_textView);
-//            tvPlus = (TextView) findViewById(R.id.tvPlus);
-//            tvMinus = (TextView) findViewById(R.id.tvMinus);
-//
-//            setCurrentPrice(1.20691);
-//            progressValue = getCurrentPrice();
-//            circularSeekBar.setProgress(50);
-//
-//            tvPlus.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-////                    progressValue = circularSeekBar.getProgress() * 100000;
-////                    double output = ((double) progressValue / 100000);
-////                    circularSeekBar.setProgress((int) output);
-////                    progressUpdate.setText(String.valueOf(output));
-//                }
-//            });
-//
-//            tvMinus.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-////                    progressValue = circularSeekBar.getProgress() - 100001;
-////                    double output = ((double) progressValue / 100000);
-////                    circularSeekBar.setProgress((int) output);
-////                    progressUpdate.setText(String.valueOf(output));
-//                }
-//            });
-//            progressUpdate.setText(getCurrentPrice() + "");
-//
-//            circularSeekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
-//                @Override
-//                public void onProgressChanged(CircularSeekBar circularSeekBar, int progress, boolean fromUser) {
-//
-//                    if(startProgress <progress)
-//                        progressValue = getCurrentPrice() - progress;
-//                    else
-//                        progressValue = getCurrentPrice() + progress;
-////                    if (progress == 50) {
-////                        progressValue = getCurrentPrice();
-////                    }
-////                    if (progress > currentProgress && progress < 100) {
-////                        progressValue = progressValue - 1;
-////                    } else if (progress < currentProgress && progress > 0) {
-////                        progressValue = progressValue + 1;
-////                    }
-////                    Log.e("PROGRESS CHANGED", progressValue + "");
-//                    progressUpdate.setText(String.valueOf(decimalFormatter(progressValue)));
-//                }
-//
-//                @Override
-//                public void onStopTrackingTouch(CircularSeekBar seekBar) {
-//                    stopProgress= seekBar.getProgress();
-////                    if (seekBar.getProgress() == 50) {
-////                        progressValue = getCurrentPrice();
-////                    }
-////                    if (seekBar.getProgress() > currentProgress && seekBar.getProgress() < 100) {
-////                        progressValue = progressValue - 1;
-////                    } else if (seekBar.getProgress() < currentProgress && seekBar.getProgress() > 0) {
-////                        progressValue = progressValue + 1;
-////                    }
-//                    Log.e("STOP", stopProgress + "");
-////                    progressUpdate.setText(String.valueOf(decimalFormatter(progressValue)));
-//                }
-//
-//                @Override
-//                public void onStartTrackingTouch(CircularSeekBar seekBar) {
-//                    startProgress = seekBar.getProgress();
-////                    if (seekBar.getProgress() == 50) {
-////                        progressValue = getCurrentPrice();
-////                    }
-////                    if (seekBar.getProgress() > currentProgress && seekBar.getProgress() < 100) {
-////                        progressValue = progressValue - 1;
-////                    } else if (seekBar.getProgress() < currentProgress && seekBar.getProgress() > 0) {
-////                        progressValue = progressValue + 1;
-////                    }
-//                    Log.e("START", startProgress + "");
-////                    progressUpdate.setText(String.valueOf(decimalFormatter(progressValue)));
-//                }
-//            });
 
         } else {
             setContentView(R.layout.sample_with_background);

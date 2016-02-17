@@ -1,6 +1,2 @@
-CHANGED,/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/szugyi/circlemenusample/SeekbarDialog$1$override.class
 CHANGED,/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/szugyi/circlemenusample/SeekbarDialog$override.class
-CHANGED,/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/szugyi/circlemenusample/SeekbarDialog$2$override.class
-CHANGED,/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/szugyi/circlemenusample/SeekbarDialog$4$override.class
 CHANGED,/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/szugyi/circlemenusample/SeekbarDialog$3$override.class
