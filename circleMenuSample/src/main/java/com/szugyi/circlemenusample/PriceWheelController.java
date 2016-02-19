@@ -26,24 +26,14 @@ public class PriceWheelController extends DialogFragment {
     private float discrete = 0;
     private float start = 0;
     private float end = 100;
-
-    public static PriceWheelController newInstance(float[] num) {
-        PriceWheelController f = new PriceWheelController();
-
-        // Supply num input as an argument.
-        Bundle args = new Bundle();
-        args.putFloatArray("position", num);
-        f.setArguments(args);
-
-        return f;
-    }
+    private static String priceTag = "priceTag";
 
     public static PriceWheelController newInstance(double currentPrice) {
         PriceWheelController f = new PriceWheelController();
 
         // Supply num input as an argument.
         Bundle args = new Bundle();
-        args.putDouble("currentPrice", currentPrice);
+        args.putDouble(priceTag, currentPrice);
         f.setArguments(args);
 
         return f;
@@ -81,7 +71,7 @@ public class PriceWheelController extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
 
-        double priceValue = getArguments().getDouble("currentPrice");
+        double priceValue = getArguments().getDouble(priceTag);
         final Dialog dialog = new Dialog(getActivity());
         Window window = dialog.getWindow();
         window.requestFeature(Window.FEATURE_NO_TITLE);
@@ -104,8 +94,8 @@ public class PriceWheelController extends DialogFragment {
         progressUpdate.setText(String.valueOf(decimalFormatter(initialValue)));
 
 
-        start = -10;                              //you need to give starting value of SeekBar
-        end = 10;                 //you need to give end value of SeekBar
+        start = -10;//you need to give starting value of SeekBar
+        end = 10;//you need to give end value of SeekBar
 
         circularSeekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
             @Override
@@ -132,7 +122,7 @@ public class PriceWheelController extends DialogFragment {
 
             @Override
             public void onClick(View v) {
-                //                mListener.setOnSubmitListener(mEditText.getText().toString());
+                //mListener.setOnSubmitListener(mEditText.getText().toString());
                 dismiss();
             }
         });
