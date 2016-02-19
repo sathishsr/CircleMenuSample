@@ -2,6 +2,7 @@ package com.szugyi.circlemenusample;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.graphics.RectF;
 import android.os.Build;
 import android.os.Bundle;
@@ -23,7 +24,7 @@ import com.szugyi.circlemenu.view.CircleLayout.OnRotationFinishedListener;
 import java.text.DecimalFormat;
 
 public class SampleActivity extends Activity implements OnItemSelectedListener,
-        OnItemClickListener, OnRotationFinishedListener, OnCenterClickListener {
+        OnItemClickListener, OnRotationFinishedListener, OnCenterClickListener, DialogInterface.OnDismissListener {
     public static final String ARG_LAYOUT = "layout";
     RectF rectF;
     private TextView selectedTextView;
@@ -34,7 +35,7 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
     private double currentPrice;
     private int startProgress;
     private int stopProgress;
-
+    PriceWheelController dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,30 +56,22 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
 
-                    float num[] = {event.getX(), event.getY()};
 
-                    PriceWheelController dialog = PriceWheelController.newInstance(Double.parseDouble((edit.getText().toString())));
-//                    dialog.setCurrentPrice(Double.parseDouble(decimalFormat(Double.parseDouble(edit.getText().toString()))));
+                    dialog = new PriceWheelController();
+                    dialog.setCurrentPrice((Double.parseDouble((edit.getText().toString()))));
                     dialog.show(getFragmentManager(), "");
-
-//                    PriceWheelController newFragment = PriceWheelController.newInstance(num);
-//
-//
-////                    PriceWheelController.newInstance(num);
-//                    newFragment.show(getFragmentManager(), "");
-
 
                     return false;
                 }
             });
+
+
+
             Button btn2 = (Button) findViewById(android.R.id.button2);
             btn2.setOnTouchListener(new View.OnTouchListener() {
                 @TargetApi(Build.VERSION_CODES.HONEYCOMB)
                 @Override
                 public boolean onTouch(View v, MotionEvent event) {
-
-                    float num[] = {event.getX(), event.getY()};
-                    PriceWheelController newFragment = PriceWheelController.newInstance(num);
 
 
 //                    PriceWheelController.newInstance(num);
@@ -205,4 +198,9 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
     }
 
 
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+
+//        this.d
+    }
 }
