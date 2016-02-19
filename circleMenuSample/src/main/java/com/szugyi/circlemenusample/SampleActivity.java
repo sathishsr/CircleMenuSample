@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -46,6 +47,7 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
         if (layoutId == R.layout.sample) {
             setContentView(R.layout.sample);
 
+            final EditText edit = (EditText) findViewById(android.R.id.edit);
 
             Button btn1 = (Button) findViewById(android.R.id.button1);
             btn1.setOnTouchListener(new View.OnTouchListener() {
@@ -55,13 +57,14 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
 
                     float num[] = {event.getX(), event.getY()};
 
-                   SeekbarDialog dialog = new SeekbarDialog();
-                    dialog.show(getFragmentManager(),"");
+                    PriceWheelController dialog = PriceWheelController.newInstance(Double.parseDouble((edit.getText().toString())));
+//                    dialog.setCurrentPrice(Double.parseDouble(decimalFormat(Double.parseDouble(edit.getText().toString()))));
+                    dialog.show(getFragmentManager(), "");
 
-//                    SeekbarDialog newFragment = SeekbarDialog.newInstance(num);
+//                    PriceWheelController newFragment = PriceWheelController.newInstance(num);
 //
 //
-////                    SeekbarDialog.newInstance(num);
+////                    PriceWheelController.newInstance(num);
 //                    newFragment.show(getFragmentManager(), "");
 
 
@@ -75,10 +78,10 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
                 public boolean onTouch(View v, MotionEvent event) {
 
                     float num[] = {event.getX(), event.getY()};
-                    SeekbarDialog newFragment = SeekbarDialog.newInstance(num);
+                    PriceWheelController newFragment = PriceWheelController.newInstance(num);
 
 
-//                    SeekbarDialog.newInstance(num);
+//                    PriceWheelController.newInstance(num);
 //                    newFragment.show(getFragmentManager(), "");
 
 
@@ -118,6 +121,11 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
         return numberFormat.format(number);
     }
 
+
+    public static String decimalFormat(double price) {
+        DecimalFormat decim = new DecimalFormat("0.00");
+        return decim.format(price);
+    }
 
     @Override
     public void onItemSelected(View view, String name) {

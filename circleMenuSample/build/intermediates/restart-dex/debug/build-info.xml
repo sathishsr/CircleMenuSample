@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    api-level="22"
-    density="xhdpi"
+    api-level="1"
     format="1"
-    timestamp="1455700815055" >
+    timestamp="1455872392450" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="39" />
     <task
         name="instant-run-dex"
         duration="0" />
@@ -18,28 +17,6 @@
         name="verifier"
         duration="0" />
 
-    <build timestamp="1455700205729" >
-        <artifact
-            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/outputs/apk/circleMenuSample-debug.apk"
-            type="MAIN" />
-    </build>
-    <build timestamp="1455700536914" >
-        <artifact
-            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/outputs/apk/circleMenuSample-debug.apk"
-            type="MAIN" />
-    </build>
-    <build
-        timestamp="1455700660415"
-        verifier="METHOD_DELETED" >
-        <artifact
-            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7_883e3519345ab823d89316543a365c9bc135d91a/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="1455700786109" >
-        <artifact
-            location="/home/sathishsr/AndroidStudioProjects/CircleMenuSample/circleMenuSample/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6_2b905220fa786c315f21ac289529a557b64eb026/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="1455700815055" />
+    <build timestamp="1455872392450" />
 
 </instant-run>
