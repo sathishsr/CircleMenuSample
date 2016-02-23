@@ -30,10 +30,17 @@ public class PriceWheelController extends DialogFragment {
     private float start = 0;
     private float end = 100;
     //Stores the updated price
-    private String newPrice ="";
+    private String newPrice = "";
+
+    public PriceWheelController() {
+    }
+
     public double getCurrentPrice() {
         return currentPrice;
     }
+
+    //Stores default precision for the symbol
+    private int defaultPrecision;
 
     public void setCurrentPrice(double currentPrice) {
         this.currentPrice = currentPrice;
@@ -44,6 +51,27 @@ public class PriceWheelController extends DialogFragment {
     public void setOnUpdateListener(OnUpdateListener onUpdateListener) {
         this.onUpdateListener = onUpdateListener;
     }
+
+    public int getDefaultPrecision() {
+
+        return defaultPrecision;
+    }
+
+    public void setDefaultPrecision(int defaultPrecision) {
+        this.defaultPrecision = defaultPrecision;
+        switch (defaultPrecision) {
+            case 3:
+                this.defaultPrecision = 100;
+                break;
+            case 4:
+                this.defaultPrecision = 1000;
+                break;
+            case 5:
+                this.defaultPrecision = 10000;
+                break;
+        }
+    }
+
 
     interface OnUpdateListener {
         void onUpdateListener(String arg);
@@ -65,7 +93,7 @@ public class PriceWheelController extends DialogFragment {
     @Override
     public void onDismiss(DialogInterface dialog) {
         super.onDismiss(dialog);
-       getNewPrice();
+        getNewPrice();
     }
 
     @Override
@@ -91,6 +119,7 @@ public class PriceWheelController extends DialogFragment {
         start = -10;//you need to give starting value of SeekBar
         end = 10;//you need to give end value of SeekBar
 
+
         circularSeekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
             @Override
             public void onStopTrackingTouch(CircularSeekBar seekBar) {
@@ -105,12 +134,12 @@ public class PriceWheelController extends DialogFragment {
                 // To convert it as discrete value
                 float dis = end - start;
                 discrete = (start + (((float) progress / 100) * dis));
-                float precision = discrete / 100;// 100 -> should be based on precision
-                double forwardValue = getCurrentPrice() - precision;
-                progressUpdate.setText(String.valueOf(decimalFormatter(forwardValue)));
+                float precision = discrete / getDefaultPrecision();// 100 -> should be based on precision
+                double updatedValue = getCurrentPrice() - precision;
+                progressUpdate.setText(String.valueOf(decimalFormatter(updatedValue)));
 
                 //Pass the updated value to the listener.
-                if(onUpdateListener!=null){
+                if (onUpdateListener != null) {
                     onUpdateListener.onUpdateListener(progressUpdate.getText().toString());
                 }
             }
@@ -123,7 +152,6 @@ public class PriceWheelController extends DialogFragment {
 
             @Override
             public void onClick(View v) {
-                //mListener.setOnSubmitListener(mEditText.getText().toString());
                 dismiss();
             }
         });
