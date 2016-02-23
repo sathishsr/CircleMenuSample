@@ -23,10 +23,13 @@ import java.text.DecimalFormat;
 public class PriceWheelController extends DialogFragment {
 
     // --Commented out by Inspection (19/2/16 2:30 PM):private EditText mEditText;
+    //Will store the current price of the text field
     private double currentPrice;
+
     private float discrete = 0;
     private float start = 0;
     private float end = 100;
+    //Stores the updated price
     private String newPrice ="";
     public double getCurrentPrice() {
         return currentPrice;
@@ -36,11 +39,16 @@ public class PriceWheelController extends DialogFragment {
         this.currentPrice = currentPrice;
     }
 
-// --Commented out by Inspection START (19/2/16 2:26 PM):
-//    interface onSubmitListener {
-//        void setOnSubmitListener(String arg);
-//    }
-// --Commented out by Inspection STOP (19/2/16 2:26 PM)
+    private OnUpdateListener onUpdateListener;
+
+    public void setOnUpdateListener(OnUpdateListener onUpdateListener) {
+        this.onUpdateListener = onUpdateListener;
+    }
+
+    interface OnUpdateListener {
+        void onUpdateListener(String arg);
+    }
+
 
     private String decimalFormatter(double number) {
         DecimalFormat numberFormat = new DecimalFormat("#.000");  //100 ->Should be based on Precision
@@ -100,6 +108,11 @@ public class PriceWheelController extends DialogFragment {
                 float precision = discrete / 100;// 100 -> should be based on precision
                 double forwardValue = getCurrentPrice() - precision;
                 progressUpdate.setText(String.valueOf(decimalFormatter(forwardValue)));
+
+                //Pass the updated value to the listener.
+                if(onUpdateListener!=null){
+                    onUpdateListener.onUpdateListener(progressUpdate.getText().toString());
+                }
             }
         });
 

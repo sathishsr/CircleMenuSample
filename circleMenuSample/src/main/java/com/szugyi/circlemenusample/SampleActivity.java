@@ -58,13 +58,21 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
 
 
                     dialog = new PriceWheelController();
-                    dialog.setCurrentPrice((Double.parseDouble((edit.getText().toString()))));
-                    dialog.show(getFragmentManager(), "");
+                    if (edit.getText().toString().length() > 0) {
+                        dialog.setCurrentPrice((Double.parseDouble((edit.getText().toString()))));
 
+                        dialog.show(getFragmentManager(), "");
+
+                        dialog.setOnUpdateListener(new PriceWheelController.OnUpdateListener() {
+                            @Override
+                            public void onUpdateListener(String arg) {
+                                edit.setText(arg);
+                            }
+                        });
+                    }
                     return false;
                 }
             });
-
 
 
             Button btn2 = (Button) findViewById(android.R.id.button2);
@@ -203,4 +211,5 @@ public class SampleActivity extends Activity implements OnItemSelectedListener,
 
 //        this.d
     }
+
 }
