@@ -112,12 +112,13 @@ public class PriceWheelController extends DialogFragment {
         final TextView progressUpdate = (TextView) dialog.findViewById(R.id.main_selected_textView);
 
         double initialValue = getCurrentPrice();
-        circularSeekBar.setProgress(50);
+
+        circularSeekBar.setProgress(11);
 
         progressUpdate.setText(String.valueOf(decimalFormatter(initialValue)));
 
-        start = -10;//you need to give starting value of SeekBar
-        end = 10;//you need to give end value of SeekBar
+        start = -50;//you need to give starting value of SeekBar
+        end = 50;//you need to give end value of SeekBar
 
 
         circularSeekBar.setOnSeekBarChangeListener(new CircularSeekBar.OnCircularSeekBarChangeListener() {
@@ -133,9 +134,10 @@ public class PriceWheelController extends DialogFragment {
             public void onProgressChanged(CircularSeekBar CircularSeekBar, int progress, boolean fromUser) {
                 // To convert it as discrete value
                 float dis = end - start;
-                discrete = (start + (((float) progress / 100) * dis));
-                float precision = discrete / getDefaultPrecision();// 100 -> should be based on precision
+                discrete = (start + (((float) progress / 100) * dis))+39;
+                float precision = discrete / 100;// 100 -> should be based on precision
                 double updatedValue = getCurrentPrice() - precision;
+                System.out.println("end::" + end + "\nstart::" + start + "\ndis::" + dis + "\ndiscrete::" + discrete + "\nprecision::" + precision + "\nCurrentPrice" + getCurrentPrice() + "\nupdateValue::" + updatedValue);
                 progressUpdate.setText(String.valueOf(decimalFormatter(updatedValue)));
 
                 //Pass the updated value to the listener.
@@ -164,5 +166,10 @@ public class PriceWheelController extends DialogFragment {
 
     public void setNewPrice(String newPrice) {
         this.newPrice = newPrice;
+    }
+
+    public static String decimalFormat(double price) {
+        DecimalFormat decim = new DecimalFormat("0.00");
+        return decim.format(price);
     }
 }
