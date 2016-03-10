@@ -260,8 +260,8 @@ public class CircleLayout extends ViewGroup {
 		radius = (layoutWidth <= layoutHeight) ? layoutWidth / 4
 				: layoutHeight / 4;
 
-		childWidth = (int) (radius / 3);
-		childHeight = (int) (radius / 4);
+		childWidth = (int) (radius / 2);
+		childHeight = (int) (radius / 3);
 
 		float angleDelay = 360.0f / getChildCount();
 
